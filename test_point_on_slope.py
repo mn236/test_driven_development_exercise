@@ -5,7 +5,7 @@ import pytest
     (2, 1, 8, 2, 6, 1.67),
     (2, 1, 8, 2, 12, 2.67),
 ])
-def test_calculate_y(input_x, expected):
+def test_calculate_y(x1, y1, x2, y2, input_x, expected):
     from point_on_slope import calculate_y
-    answer = calculate_y(input_x)
+    answer = calculate_y(x1, y1, x2, y2, input_x)
     assert answer == expected
